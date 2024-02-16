@@ -7,4 +7,13 @@ console.log(greetings);
 
 // Cannot redeclare block-scoped variable 'greetings'
 // export  {} will work as well
+
+// number
+let userId: number = 123;
+// if you type  'userId. '  you will see all the number methods
+// you dont have to type ': number'. it will automatically be number when you assign it a number value
+
+// boolean
+let isLoggedIn: boolean = false;
+
 export {};
