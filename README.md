@@ -25,15 +25,6 @@
 ## Introduction to TypeScript
 
     TypeScript is a statically typed superset of JavaScript developed by Microsoft. It adds optional static typing to JavaScript, providing developers with features like type checking and interfaces while still compiling down to standard JavaScript.
-    ```
-    function greet(name: string) {
-
-return `Hello, ${name}!`;
-}
-
-console.log(greet("John")); // Output: Hello, John!
-
-````
 
 ## Installing TypeScript
 
@@ -41,7 +32,7 @@ You can install TypeScript globally using npm:
 
 ```shell
 npm i -g typescript
-````
+```
 
 ## Basic Types
 
