@@ -32,7 +32,8 @@ return `Hello, ${name}!`;
 }
 
 console.log(greet("John")); // Output: Hello, John!
-```
+
+````
 
 ## Installing TypeScript
 
@@ -40,7 +41,7 @@ You can install TypeScript globally using npm:
 
 ```shell
 npm i -g typescript
-```
+````
 
 ## Basic Types
 
