@@ -26,13 +26,13 @@
 
     TypeScript is a statically typed superset of JavaScript developed by Microsoft. It adds optional static typing to JavaScript, providing developers with features like type checking and interfaces while still compiling down to standard JavaScript.
     ```
-    // TypeScript code
+    function greet(name: string) {
 
-function greet(name: string) {
 return `Hello, ${name}!`;
 }
 
 console.log(greet("John")); // Output: Hello, John!
+```
 
 ## Installing TypeScript
 
