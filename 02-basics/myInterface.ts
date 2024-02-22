@@ -8,9 +8,15 @@ interface User {
   getCoupon(couponName: string): number;
 }
 
+// reoperting the interface
+interface User {
+  githubUsername: string;
+}
+
 const user1: User = {
   _id: 1,
   name: "pedro",
+  githubUsername: "pedro",
   id: 1,
   startTrial() {
     return "hello";
