@@ -141,6 +141,9 @@ console.log("Updated Height:", rectangle.height); // Output: 12
 // Trying to set invalid width (less than or equal to 0)
 try {
   rectangle.width = -2; // This will throw an error
-} catch (error) {
-  console.error(error.message); // Output: Width must be greater than 0
+} catch (err) {
+  console.error({
+    error:
+      err instanceof Error ? err.message : "Failed to do something exceptional",
+  }); // Output: Width must be greater than 0
 }
