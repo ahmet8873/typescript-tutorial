@@ -60,3 +60,28 @@ console.log(getSearchProducts3([1, 2, 3, 4, 5]));
 console.log(
   getSearchProducts3([" ali ", " pedro ", " juan ", " john", "jack"], 3)
 );
+
+// using type parameter constraints
+const anotherFunction = <T, U extends string>(a: T, b: U): T => {
+  return a;
+};
+anotherFunction(1, "hola");
+// anotherFunction("hola", 1); // error
+
+interface database {
+  id: number;
+  name: string;
+  connection: string;
+}
+
+const anotherFunction2 = <T, U extends database>(
+  valOne: T,
+  valTwo: U
+): object => {
+  return {
+    valOne,
+    valTwo,
+  };
+};
+
+console.log(anotherFunction2(1, { id: 1, name: "pedro", connection: "mysql" }));

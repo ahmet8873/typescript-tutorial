@@ -36,3 +36,15 @@ const getSearchProducts3 = (products, index = 0) => {
 };
 console.log(getSearchProducts3([1, 2, 3, 4, 5]));
 console.log(getSearchProducts3([" ali ", " pedro ", " juan ", " john", "jack"], 3));
+// using type parameter constraints
+const anotherFunction = (a, b) => {
+    return a;
+};
+anotherFunction(1, "hola");
+const anotherFunction2 = (valOne, valTwo) => {
+    return {
+        valOne,
+        valTwo,
+    };
+};
+console.log(anotherFunction2(1, { id: 1, name: "pedro", connection: "mysql" }));
